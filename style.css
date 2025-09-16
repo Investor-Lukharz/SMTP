@@ -1,0 +1,256 @@
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: darkslateblue;
+    color:white;
+}
+header{
+    display: flex;
+    color:aliceblue;
+    height:15%;
+    align-items:center;
+    padding:15px;
+    box-shadow: 0px 0px 3px rgb(119, 119, 196);
+}
+img{
+    margin-left:10%;
+    border-radius: 70%;
+    margin-right:2em;
+    outline:2px solid gray;
+    padding:3px;
+}
+.brand{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    gap:5px;  
+}
+.name h1{
+    letter-spacing: 5px;
+    font-size:3em;
+    text-shadow: -3px -3px 3px gray ;
+    font-variant: small-caps;
+}
+.name p{
+    display: block;
+    box-shadow: inset 0px 0px 5px rgb(136, 100, 195);
+    padding:7px;
+    width:80%;
+    border-radius:15px;
+    text-align:center;
+    margin-top:5px;
+    font-weight: bolder;
+    color:rgba(127, 255, 212, 0.601);
+    word-spacing: 3px;
+}   
+ul{
+    list-style: none;    
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0px 0px 3px whitesmoke;
+    height:30px;
+    margin-right:2em;
+    border-radius:15px;
+    margin-top:1.2em;
+    font-weight: bolder;
+    padding:3px;
+}
+ul li{  
+    font-weight:bolder;
+    transition:all ease 2s;
+}
+ul li a{
+    padding:15px;
+    text-decoration:none;
+    color:rgba(127, 255, 212, 0.601);
+    transition:all ease 2s;
+   
+}
+ul li:hover{
+    background-color: white;
+    border-radius:15px;
+}
+ul li a:hover{
+        color:blue;
+}
+section{
+    width:50%;
+    min-height: 75%;
+    margin:4em auto;
+    box-shadow: inset 0px 0px 5px  rgb(252, 253, 253);
+    border-radius: 40px;
+    padding: 1em;
+}
+div.indicator{
+    margin:1em auto;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    gap:5px;
+}
+div.arrow{
+    width:25px;
+    height:1.6px;
+    background-color:rgba(255, 255, 255, 0.623);
+}
+.step{
+    padding:10px;
+    border-radius: 50%;
+    background-color:rgba(240, 248, 255, 0.54);
+    color:gray;
+}
+.active{
+    background-color:rgba(0, 0, 255, 0.664);
+    color:white;
+}
+.arrow.active{
+    background-color:rgba(0, 0, 255, 0.664);
+    color:white;
+}
+section h3{
+    margin: auto;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: 1px solid rgb(179, 153, 234);
+    padding:0px 5px  .5em 5px;
+    width: 80%;
+}
+form{
+    margin:1.5em auto;
+    width:70%;
+
+}
+label{
+    display:block;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+input{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    padding:8px;
+    margin:9px;
+    border:none;
+    color:green;
+    font-weight: bolder;
+}
+input::placeholder{
+    color:darkblue;
+    font-weight: bolder;
+}
+form button.submit{
+    display: block;
+    padding:8px 20px;
+    border-radius:35px;
+    border:none;
+    margin:20px auto;
+    background-color: green;
+    color:whitesmoke;
+    cursor:pointer;
+    font-weight: bolder;
+    transition:all ease 2s;
+}
+form button.submit:hover{
+    background-color:blue;
+    transform:scale(1.1);
+}
+div.error{
+    width:50%;
+    padding: 10px;
+    box-shadow: inset 0px 0px 2px red;
+    background-color: rgb(183, 111, 111);
+    color:aliceblue;
+    margin:auto;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+div.feedback{
+    margin:1em auto;
+    font-weight: bolder;
+    text-align: center;
+    width:50%;
+    padding :10px;
+    box-shadow: inset 0px 0px 2px rgb(0, 148, 59);
+    background-color: rgba(150, 197, 161, 0.416);
+    color:aliceblue;
+    border-radius: 20px;
+}
+div.instruction{
+    margin:.5em auto;
+    padding:10px;
+    color:white;
+    animation:flips 3s ease infinite;
+    text-align: center;
+    width:50%;
+    border-radius: 20px;
+}
+@keyframes flips  {
+    0%{
+        background-color: green;
+    }
+    50%{
+        background-color:blue;
+    }
+    100%{
+        background-color:purple;
+    }
+    
+}
+.feedback_otp{
+    color:rgb(40, 193, 40);
+    margin:10px;
+    font-size: 1.2em;
+}
+div.instruction p.otp{
+    font-weight: bolder;
+    animation: blinks 2s ease infinite;
+    margin:10px;
+}
+@keyframes blinks {
+    0%{
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+    50%{
+        opacity: 1.5;
+        transform: scale(1.2);
+    }
+    100%{
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+}
+button.back_btn{
+    background:transparent;
+    text-decoration: underline;
+    color:wheat;
+    display:block;
+    margin:1em auto;
+    border:none;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+button.back_btn:hover{
+    color:darkseagreen;
+    background:transparent;
+}
+footer{
+    box-shadow: 0px 0px 3px rgb(119, 119, 196);
+    min-height: 30%;
+
+}
+footer p{
+    padding: .5em;
+    margin:auto;
+    text-align: center;
+    font-weight: bolder;
+}
